@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brook Shoes | Services</title>
+  <script src="https://cdn.lordicon.com/lordicon.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #fff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      color: #e84c4f;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    .section-title {
+      text-align: center;
+      margin: 30px 0;
+      font-size: 32px;
+      color: #e84c4f;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      padding: 40px;
+    }
+    .service-card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .service-card lord-icon {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 15px;
+    }
+    .service-card h3 {
+      color: #e84c4f;
+      margin-bottom: 15px;
+    }
+    .service-card p {
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Brook Shoes</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="cart.html">Cart</a>
+      <a href="services.html">Services</a>
+    </nav>
+  </header>
+
+  <h2 class="section-title">Our Services</h2>
+
+  <section class="services">
+    <div class="service-card">
+      <lord-icon
+        src="https://cdn.lordicon.com/ugwcvpvu.json"
+        trigger="hover"
+        colors="primary:#e84c4f,secondary:#f9c9c9">
+      </lord-icon>
+      <h3>Free Home Delivery</h3>
+      <p>Enjoy free delivery for orders above Rs. 2,000. Fast and reliable delivery to your doorstep.</p>
+    </div>
+
+    <div class="service-card">
+      <lord-icon
+        src="https://cdn.lordicon.com/qhviklyi.json"
+        trigger="hover"
+        colors="primary:#e84c4f,secondary:#f9c9c9">
+      </lord-icon>
+      <h3>7-Day Return Policy</h3>
+      <p>If you’re not satisfied, you can return the shoes within 7 days – no questions asked!</p>
+    </div>
+
+    <div class="service-card">
+      <lord-icon
+        src="https://cdn.lordicon.com/lomfljuq.json"
+        trigger="hover"
+        colors="primary:#e84c4f,secondary:#f9c9c9">
+      </lord-icon>
+      <h3>Custom Sizing</h3>
+      <p>We offer size customization options for select products to ensure perfect fit and comfort.</p>
+    </div>
+
+    <div class="service-card">
+      <lord-icon
+        src="https://cdn.lordicon.com/dklbhvrt.json"
+        trigger="hover"
+        colors="primary:#e84c4f,secondary:#f9c9c9">
+      </lord-icon>
+      <h3>Customer Support</h3>
+      <p>Our support team is available 24/7 via phone, email or chat to assist you with any queries.</p>
+    </div>
+  </section>
+</body>
+</html>
