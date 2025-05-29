@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brooks Shoes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Bootstrap CSS for carousel -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Lordicon -->
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Brook Shoes</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with Animation -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animate__animated animate__fadeInDown">Welcome to my Store</h1>
+                <p class="animate__animated animate__fadeInUp animate__delay-1s">Discover our premium collection of footwear for every occasion</p>
+                <a href="products.html" class="btn animate__animated animate__fadeInUp animate__delay-2s">Shop Now</a>
+            </div>
+            <div class="hero-animation">
+                <lord-icon
+                    src="https://cdn.lordicon.com/wxnxiano.json"
+                    trigger="loop"
+                    colors="primary:#ffffff,secondary:#f7fff7"
+                    style="width:250px;height:250px">
+                </lord-icon>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title animate__animated animate__fadeIn">Shop By Category</h2>
+            <div class="category-grid">
+                <div class="category-card animate__animated animate__fadeInLeft">
+                    <div class="category-icon">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFtBPaBpRMX_dwLfJQyNvWPG3D0ih1kGAQqw&s" alt="">
+                    </div>
+                    <h3>Running</h3>
+                    <p>Performance footwear for athletes</p>
+                    <a href="products.html?category=running" class="btn-small">View Collection</a>
+                </div>
+                <div class="category-card animate__animated animate__fadeInUp">
+                    <div class="category-icon">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm8znQ8qxg6kBQ0hvZ7BRsaLI55J45bs0Ykw&s" alt="">
+                    </div>
+                    <h3>Casual</h3>
+                    <p>Everyday comfort with style</p>
+                    <a href="products.html?category=casual" class="btn-small">View Collection</a>
+                </div>
+                <div class="category-card animate__animated animate__fadeInRight">
+                    <div class="category-icon">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAXPUkNDk1thwLlyVlz-lgKSqYsv3FtgMGFQ&s" alt="">
+                    </div>
+                    <h3>Formal</h3>
+                    <p>Elegance for special occasions</p>
+                    <a href="products.html?category=formal" class="btn-small">View Collection</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Slider -->
+    <section class="product-slider">
+        <div class="container">
+            <h2 class="section-title">Trending Now</h2>
+            <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="slide-content">
+                            <div class="slide-image">
+                                <img src="https://redtape.com/cdn/shop/files/RSO4034_1_40cd841c-11dc-4c78-ab85-bfad034e31fe.jpg?v=1748332548" alt="Running Shoe" class="animate__animated animate__zoomIn">
+                            </div>
+                            <div class="slide-info">
+                                <h3>SummitX Mountain-climbing shoes</h3>
+                                <p class="price">4000 PKR</p>
+                                <p>Our best-selling running shoe with enhanced cushioning and support for long-distance runners.</p>
+                                <button class="add-to-cart" data-id="7">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="slide-content">
+                            <div class="slide-image">
+                                <img src="https://onedegree.com.pk/cdn/shop/files/34_1.jpg?v=1706092706&width=990" alt="Casual Shoe" class="animate__animated animate__zoomIn">
+                            </div>
+                            <div class="slide-info">
+                                <h3>RoyalPace Luxurious leather loafers</h3>
+                                <p class="price">4,900 PKR
+
+                                </p>
+                                <p>The perfect blend of style and comfort for your everyday adventures.</p>
+                                <button class="add-to-cart" data-id="8">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="slide-content">
+                            <div class="slide-image">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReuSvOLob97ScxEzy_IhEvIw0KlFC1PGdFOw&s" alt="Formal Shoe" class="animate__animated animate__zoomIn">
+                            </div>
+                            <div class="slide-info">
+                                <h3>SummitX Mountain-climbing shoes.</h3>
+                                <p class="price">3,990 PKR
+
+                                </p>
+                                <p>Handcrafted leather shoes for the modern professional.</p>
+                                <button class="add-to-cart" data-id="9">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="products-grid">
+                <div class="product-card animate__animated animate__fadeIn">
+                    <div class="product-badge">New</div>
+                    <img src="https://m.media-amazon.com/images/I/71BzJpSyugL._AC_UY1000_.jpg
+                    " alt="Trail Runner">
+                    <h3>Trail Blazer X</h3>
+                    <p>3,999Rs</p>
+                    <button class="add-to-cart" data-id="4">Add to Cart</button>
+                </div>
+                <div class="product-card animate__animated animate__fadeIn animate__delay-1s">
+                    <div class="product-badge">Sale</div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYP3zW1M_ggt9t85JxkUbd-YtGRy2SKds6Eg&s
+                    " alt="Canvas Sneaker">
+                    <h3>Canvas Classic II</h3>
+                    <p><span class="original-price">7,999Rs</span>4999 Rs </p>
+                    <button class="add-to-cart" data-id="5">Add to Cart</button>
+                </div>
+                <div class="product-card animate__animated animate__fadeIn animate__delay-2s">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRZKE0CTBzOSKZQa8jKXzN62W6ExN7dHYcwg&s
+                    " alt="Oxford Shoe">
+                    <h3>Oxford Elite Pro</h3>
+                    <p>2,990Rs</p>
+                    <button class="add-to-cart" data-id="6">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-icon">
+                       <img src="" alt="">
+                    </div>
+                    <img src="https://thumbs.dreamstime.com/b/portrait-successful-business-men-office-man-169113155.jpg" alt="" style="border-radius: 20px; padding-bottom: 20px;" height="200px">
+                    <p>"The most comfortable running shoes I've ever worn. Worth every penny!"</p>
+                    <div class="customer">
+                        <h4>Sarah Johnson</h4>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-icon">
+                        <img src="https://img.freepik.com/premium-photo/accountant-portrait-happy-man-office-with-finance-career-professional-experience-confidence-asian-consultant-financial-advisor-with-pride-investment-advice-business-workplace_590464-467493.jpg?semt=ais_hybrid&w=740" alt="" style="border-radius: 20px;" height="200px">
+                    </div>
+                    <p>"Great quality formal shoes that look professional and feel amazing all day."</p>
+                    <div class="customer">
+                        <h4>Michael Chen</h4>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Join Our Community</h2>
+                    <p>Subscribe to get exclusive offers, styling tips, and new product announcements.</p>
+                </div>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+            <div class="newsletter-animation">
+                <lord-icon
+                    src="https://cdn.lordicon.com/zvllgyec.json"
+                    trigger="loop"
+                    delay="2000"
+                    colors="primary:#ffffff,secondary:#f7fff7"
+                    style="width:150px;height:150px">
+                </lord-icon>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Shoes</h3>
+                    <p>Providing premium quality footwear since 2010. Our mission is to combine comfort with style</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/aswad.tarar/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/aswadtarar4/"><i class="fab fa-instagram"></i></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Brooks Footwear. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    
+    <script>
+        // Initialize animations when elements are in viewport
+        document.addEventListener('DOMContentLoaded', function() {
+            const animateOnScroll = function() {
+                const elements = document.querySelectorAll('.animate__animated');
+                
+                elements.forEach(element => {
+                    const elementPosition = element.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    
+                    if (elementPosition < windowHeight - 100) {
+                        element.style.visibility = 'visible';
+                        element.classList.add(element.getAttribute('class').split(' ')[1]);
+                    }
+                });
+            };
+            
+            window.addEventListener('scroll', animateOnScroll);
+            animateOnScroll(); // Run once on load
+            
+            // Auto-rotate carousel
+            const myCarousel = document.getElementById('productCarousel');
+            if (myCarousel) {
+                const carousel = new bootstrap.Carousel(myCarousel, {
+                    interval: 5000,
+                    pause: 'hover'
+                });
+            }
+        });
+    </script>
+</body>
+</html>
